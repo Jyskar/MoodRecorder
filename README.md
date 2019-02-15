@@ -7,3 +7,5 @@ You can record your mood and a comment every day by using the exe found in /dist
 # Future Plans
 I plan on adding new ways to show the data such as a calendar in wich each day has a diferent color depending on the mood. But for now the simple stats and relevant days will do.
 
+
+![Image of the GUI](https://github.com/Jyskar/MoodRecorder/blob/master/GUI_Image.PNG)
