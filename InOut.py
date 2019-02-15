@@ -1,12 +1,8 @@
-class Day:
-    def __init__(self, mood, d, comment):
-        self.date = d
-        self.mood = mood
-        self.comment = comment
+from Day import Day
 
 
 # Writes the hole file again// NOT EFFICIENT AT ALL
-def writeList(name, l):
+def write_list(name, l):
     file = open(name, "w+")
     for day in l:
         file.write(str(day.mood)+","+str(day.date)+","+day.comment)

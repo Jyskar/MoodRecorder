@@ -1,6 +1,9 @@
 import datetime
 
 
+# Use GUI.py instead of this file, this the first prototype so is missing a lot of functionality and It works
+# on a command line, also writes on a complete different file, so data recorded from this
+# will not change the GUI.py data which is stored in daysGUI.txt as of 15-02-19.
 class Day:
     def __init__(self, mood, d, comment):
         self.date = d
