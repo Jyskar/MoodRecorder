@@ -7,10 +7,14 @@ import Calculations
 # check if today has already been registered
 entry_today = FALSE
 current_day = InOut.Day(50, datetime.date.today().strftime('%d-%m-%y'), "")
-list_of_days = InOut.read_from_file("daysGUI.txt")
-if list_of_days[len(list_of_days)-1].date == datetime.date.today().strftime('%d-%m-%y'):
-    entry_today = TRUE
-    current_day = list_of_days[len(list_of_days)-1]
+try:
+    list_of_days = InOut.read_from_file("daysGUI.txt")
+    if list_of_days[len(list_of_days)-1].date == datetime.date.today().strftime('%d-%m-%y'):
+        entry_today = TRUE
+        current_day = list_of_days[len(list_of_days)-1]
+except FileNotFoundError:
+    print("There's no file for days.")
+
 
 # window params
 window = Tk()
