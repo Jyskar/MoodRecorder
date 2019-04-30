@@ -50,3 +50,4 @@ if __name__ == '__main__':
 
     draw_grid()
     image.show()
+    image.save("testCalendar.jpeg", "JPEG")
